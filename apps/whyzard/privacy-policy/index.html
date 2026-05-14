@@ -170,7 +170,8 @@
             <h2>How long we keep it</h2>
             <ul>
                 <li><strong>On-device data:</strong> Stored on your device until you delete the app.</li>
-                <li><strong>Server logs:</strong> We log operational metadata (request timing, anonymous session ID, app version, and your reading-level preferences). Our application code does not log the text of your questions or answers. Logs are subject to Cloudflare's default platform retention; we do not maintain a separate long-term archive.</li>
+                <li><strong>Server logs:</strong> Cloudflare logs operational metadata (request timing, anonymous session ID, app version, and your reading-level preferences) per their default platform retention. We do not maintain a separate long-term archive.</li>
+                <li><strong>Observability traces:</strong> For debugging and answer-quality improvement, we send each request to Langfuse — including the text of your question, the prompts we send to the AI provider, the AI response, and request metadata. Retention is governed by Langfuse's terms.</li>
                 <li><strong>Analytics:</strong> Aggregated and retained by our analytics provider without personal identifiers.</li>
             </ul>
         </section>
@@ -181,6 +182,7 @@
             <ul>
                 <li><strong>Cloudflare</strong> — hosts the API. Processes your request, including the text of your question, while generating the answer.</li>
                 <li><strong>OpenRouter and the underlying AI provider</strong> (currently Google Gemini) — receives your question to generate the answer. See <a href="https://openrouter.ai/privacy">OpenRouter's privacy policy</a>.</li>
+                <li><strong>Langfuse</strong> — receives observability traces (question text, prompts, response, request metadata) so we can debug failures and improve answer quality. See <a href="https://langfuse.com/security">Langfuse's privacy policy</a>.</li>
                 <li><strong>TelemetryDeck</strong> — receives the anonymous analytics signals described above. See <a href="https://telemetrydeck.com/privacy/">TelemetryDeck's privacy policy</a>.</li>
             </ul>
         </section>
