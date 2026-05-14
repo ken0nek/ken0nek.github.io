@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whyzard — Privacy Policy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --text: #1a1a1a;
+            --text-secondary: #4a4a4a;
+            --border: #d4d4d4;
+            --bg: #ffffff;
+            --accent: #2a5a8a;
+        }
+
+        body {
+            font-family: 'Source Sans 3', 'Georgia', serif;
+            color: var(--text);
+            background: var(--bg);
+            line-height: 1.65;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 60px 24px 80px;
+        }
+
+        header {
+            margin-bottom: 48px;
+            padding-bottom: 32px;
+            border-bottom: 2px solid var(--text);
+        }
+
+        header h1 {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 4px;
+        }
+
+        header .subtitle {
+            font-size: 1.05rem;
+            font-weight: 500;
+            color: var(--accent);
+            margin-bottom: 12px;
+        }
+
+        header .meta {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-size: 1.15rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        p {
+            margin-bottom: 12px;
+            color: var(--text-secondary);
+        }
+
+        ul {
+            margin: 0 0 12px 1.25rem;
+            color: var(--text-secondary);
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        strong {
+            color: var(--text);
+            font-weight: 600;
+        }
+
+        footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 40px 20px 60px; }
+            header h1 { font-size: 1.6rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <header>
+            <h1>Whyzard</h1>
+            <div class="subtitle">Privacy Policy</div>
+            <div class="meta">Last updated: May 13, 2026</div>
+        </header>
+
+        <section>
+            <p>Whyzard ("we", "us") helps parents prepare answers to their children's questions. We designed the app to collect as little as possible.</p>
+        </section>
+
+        <section>
+            <h2>What we collect</h2>
+            <ul>
+                <li><strong>Your questions.</strong> When you ask a question, we send it to our server and to a third-party AI provider (OpenRouter, currently routing to Google Gemini) to generate the answer.</li>
+                <li><strong>App preferences and history.</strong> Your reading-level settings and past questions and answers are stored locally on your device.</li>
+                <li><strong>Anonymous usage analytics.</strong> We collect aggregate, non-identifying signals (e.g., screen views, success/failure of a request) to understand reliability and improve the app. These signals never include the text of your questions or answers.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>What we do not collect</h2>
+            <ul>
+                <li>No account, name, email, or phone number.</li>
+                <li>No location data.</li>
+                <li>No advertising identifiers and no cross-app tracking.</li>
+                <li>No information about your child beyond what you choose to write in a question.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>How we use this information</h2>
+            <ul>
+                <li>To generate the answer to your question.</li>
+                <li>To improve Whyzard based on anonymous usage patterns and reliability signals (e.g., which question types succeed or fail, which screens parents use most).</li>
+            </ul>
+            <p>We use TelemetryDeck for analytics — it's privacy-focused and cannot identify you personally.</p>
+        </section>
+
+        <section>
+            <h2>What we don't do</h2>
+            <ul>
+                <li>We do not sell your data to third parties.</li>
+                <li>We do not share your data with advertisers.</li>
+                <li>We do not use your questions to train AI models.</li>
+                <li>We do not track you across other apps or websites.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>How long we keep it</h2>
+            <ul>
+                <li><strong>On-device data:</strong> Stored on your device until you delete the app.</li>
+                <li><strong>Server logs:</strong> We log operational metadata (request timing, anonymous session ID, app version, and your reading-level preferences). Our application code does not log the text of your questions or answers. Logs are subject to Cloudflare's default platform retention; we do not maintain a separate long-term archive.</li>
+                <li><strong>Analytics:</strong> Aggregated and retained by our analytics provider without personal identifiers.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Third parties</h2>
+            <p>We use the following third parties to operate the service:</p>
+            <ul>
+                <li><strong>Cloudflare</strong> — hosts the API. Processes your request, including the text of your question, while generating the answer.</li>
+                <li><strong>OpenRouter and the underlying AI provider</strong> (currently Google Gemini) — receives your question to generate the answer. See <a href="https://openrouter.ai/privacy">OpenRouter's privacy policy</a>.</li>
+                <li><strong>TelemetryDeck</strong> — receives the anonymous analytics signals described above. See <a href="https://telemetrydeck.com/privacy/">TelemetryDeck's privacy policy</a>.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Children's privacy</h2>
+            <p>Whyzard is intended for parents. The child is never the direct user of the app. We do not knowingly collect personal information from children under 13.</p>
+        </section>
+
+        <section>
+            <h2>Your rights</h2>
+            <p>Whyzard has no user accounts and stores no name, email, or contact information, so there is no profile to access or delete. Uninstalling the app removes all data stored on your device. If you reside in a region with privacy laws such as GDPR or CCPA, you have the rights provided by those laws — contact us to exercise them.</p>
+        </section>
+
+        <section>
+            <h2>Changes</h2>
+            <p>If we make material changes to this policy, we will update the date above and notify you in the app.</p>
+        </section>
+
+        <section>
+            <h2>Contact</h2>
+            <p>Questions about this policy? Email <a href="mailto:whyzard@ken0nek.com">whyzard@ken0nek.com</a>.</p>
+        </section>
+
+        <footer>
+            &copy; 2026 Ken Tominaga / AIMA
+        </footer>
+
+    </div>
+</body>
+</html>
