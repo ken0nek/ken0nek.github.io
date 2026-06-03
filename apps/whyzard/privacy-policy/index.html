@@ -121,7 +121,7 @@
         <header>
             <h1>Whyzard</h1>
             <div class="subtitle">Privacy Policy</div>
-            <div class="meta">Last updated: May 13, 2026</div>
+            <div class="meta">Last updated: May 31, 2026</div>
         </header>
 
         <section>
@@ -131,9 +131,10 @@
         <section>
             <h2>What we collect</h2>
             <ul>
-                <li><strong>Your questions.</strong> When you ask a question, we send it to our server and to a third-party AI provider (OpenRouter, currently routing to Google Gemini) to generate the answer.</li>
+                <li><strong>Your questions.</strong> When you ask a question, we send it to our server and to a third-party AI provider to generate the answer.</li>
                 <li><strong>App preferences and history.</strong> Your reading-level settings and past questions and answers are stored locally on your device.</li>
-                <li><strong>Anonymous usage analytics.</strong> We collect aggregate, non-identifying signals (e.g., screen views, success/failure of a request) to understand reliability and improve the app. These signals never include the text of your questions or answers.</li>
+                <li><strong>Anonymous usage analytics.</strong> We collect aggregate, non-identifying signals (e.g., screen views, success/failure of a request) to understand reliability and improve the app. These signals do not include the text of your questions or answers.</li>
+                <li><strong>Subscription status.</strong> If you subscribe to a paid plan, the app verifies your purchase with Apple and our server using an anonymous identifier — never your Apple ID, name, or email. See <em>Subscriptions and purchases</em> below.</li>
             </ul>
         </section>
 
@@ -153,7 +154,17 @@
                 <li>To generate the answer to your question.</li>
                 <li>To improve Whyzard based on anonymous usage patterns and reliability signals (e.g., which question types succeed or fail, which screens parents use most).</li>
             </ul>
-            <p>We use TelemetryDeck for analytics — it's privacy-focused and cannot identify you personally.</p>
+            <p>We use a privacy-focused analytics provider that is designed not to identify you personally.</p>
+        </section>
+
+        <section>
+            <h2>Subscriptions and purchases</h2>
+            <p>Whyzard offers optional paid subscriptions. The app is fully usable without one.</p>
+            <ul>
+                <li><strong>Apple handles payment.</strong> Purchases are processed by Apple through the App Store. We never receive or store your payment card, Apple ID, or billing address.</li>
+                <li><strong>Verifying your subscription.</strong> To confirm your subscription is active and keep it in sync across your devices, the app sends Apple's signed purchase receipt and an anonymous subscriber identifier to our server. That identifier is derived from a value Apple assigns to your app install — it is not your name, email, or Apple ID, and we cannot use it to contact or identify you.</li>
+                <li><strong>What we store.</strong> Keyed to that anonymous identifier, our server keeps only your subscription status (the plan and its renewal or expiry date) so the app can unlock paid features. Apple notifies our server when your subscription renews, lapses, or is refunded so this status stays current.</li>
+            </ul>
         </section>
 
         <section>
@@ -161,7 +172,7 @@
             <ul>
                 <li>We do not sell your data to third parties.</li>
                 <li>We do not share your data with advertisers.</li>
-                <li>We do not use your questions to train AI models.</li>
+                <li>We do not use your questions to train our own models.</li>
                 <li>We do not track you across other apps or websites.</li>
             </ul>
         </section>
@@ -170,9 +181,10 @@
             <h2>How long we keep it</h2>
             <ul>
                 <li><strong>On-device data:</strong> Stored on your device until you delete the app.</li>
-                <li><strong>Server logs:</strong> Cloudflare logs operational metadata (request timing, anonymous session ID, app version, and your reading-level preferences) per their default platform retention. We do not maintain a separate long-term archive.</li>
-                <li><strong>Observability traces:</strong> For debugging and answer-quality improvement, we send each request to Langfuse — including the text of your question, the prompts we send to the AI provider, the AI response, and request metadata. Retention is governed by Langfuse's terms.</li>
+                <li><strong>Server logs:</strong> Our hosting provider logs operational metadata (such as request timing, an anonymous session ID, and app version) per its default platform retention. We retain data only as long as needed to run and improve the service.</li>
+                <li><strong>Observability traces:</strong> For debugging and answer-quality improvement, we send each request to a third-party observability provider — including the text of your question, the prompts we send to the AI provider, the AI response, and request metadata. Retention is governed by that provider's terms.</li>
                 <li><strong>Analytics:</strong> Aggregated and retained by our analytics provider without personal identifiers.</li>
+                <li><strong>Subscription status:</strong> Stored keyed to the anonymous subscriber identifier and kept current as your subscription renews; it reflects only your current plan and renewal date, not a purchase history.</li>
             </ul>
         </section>
 
@@ -180,10 +192,11 @@
             <h2>Third parties</h2>
             <p>We use the following third parties to operate the service:</p>
             <ul>
-                <li><strong>Cloudflare</strong> — hosts the API. Processes your request, including the text of your question, while generating the answer.</li>
-                <li><strong>OpenRouter and the underlying AI provider</strong> (currently Google Gemini) — receives your question to generate the answer. See <a href="https://openrouter.ai/privacy">OpenRouter's privacy policy</a>.</li>
-                <li><strong>Langfuse</strong> — receives observability traces (question text, prompts, response, request metadata) so we can debug failures and improve answer quality. See <a href="https://langfuse.com/security">Langfuse's privacy policy</a>.</li>
-                <li><strong>TelemetryDeck</strong> — receives the anonymous analytics signals described above. See <a href="https://telemetrydeck.com/privacy/">TelemetryDeck's privacy policy</a>.</li>
+                <li><strong>Our hosting provider</strong> — runs the API and processes your request, including the text of your question, while generating the answer.</li>
+                <li><strong>Our AI provider</strong> — receives your question to generate the answer, and processes it under its own terms.</li>
+                <li><strong>Our observability provider</strong> — receives request data (question text, prompts, response, and metadata) so we can debug failures and improve answer quality.</li>
+                <li><strong>Our analytics provider</strong> — receives the anonymous analytics signals described above.</li>
+                <li><strong>Apple</strong> — processes subscription payments through the App Store and sends our server signed receipts and renewal notifications so we can verify your access. See <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</li>
             </ul>
         </section>
 
@@ -199,7 +212,7 @@
 
         <section>
             <h2>Changes</h2>
-            <p>If we make material changes to this policy, we will update the date above and notify you in the app.</p>
+            <p>If we make material changes to this policy, we will update the date at the top of this page.</p>
         </section>
 
         <section>
