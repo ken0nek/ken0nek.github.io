@@ -121,20 +121,21 @@
         <header>
             <h1>Whyzard</h1>
             <div class="subtitle">Privacy Policy</div>
-            <div class="meta">Last updated: October 15, 2026</div>
+            <div class="meta">Last updated: November 18, 2026</div>
         </header>
 
         <section>
-            <p>Whyzard ("we", "us") helps parents prepare answers to their children's questions. We designed the app to collect as little as possible.</p>
+            <p>Whyzard ("we", "us") helps parents prepare answers to their children's questions. This policy explains what leaves your device, who receives it, and why.</p>
         </section>
 
         <section>
             <h2>What we collect</h2>
             <ul>
-                <li><strong>Your questions.</strong> When you ask a question, we send it to our server and to a third-party AI provider to generate the answer.</li>
-                <li><strong>App preferences and history.</strong> Your reading-level settings and past questions and answers are stored locally on your device.</li>
-                <li><strong>Analytics.</strong> We use third-party analytics services to understand how the app is used and to improve it. They receive usage information, such as screen views and whether requests succeed, together with an identifier. We do not send them your name, email address or Apple ID, or the text of your questions or answers. These services may process this information in countries other than your own.</li>
-                <li><strong>Subscription status.</strong> If you subscribe to a paid plan, the app verifies your purchase with Apple and our server using an anonymous identifier — never your Apple ID, name, or email. See <em>Subscriptions and purchases</em> below.</li>
+                <li><strong>Your questions.</strong> When you ask a question, the app sends it to our server and to third-party AI providers to generate the answer, together with context such as earlier questions and answers in the same conversation, the language, and the reading levels you set. Features such as read-aloud can send the text they work on in the same way.</li>
+                <li><strong>Question tags.</strong> On supported devices, the app may also send the text of a question and its language to Apple's Private Cloud Compute to tag the question with its topics, the feelings behind it and the things it mentions. This can include questions you asked earlier. The tags are stored on your device and are not sent to us.</li>
+                <li><strong>App preferences and history.</strong> Your settings, such as reading levels, and your past questions and answers are stored on your device.</li>
+                <li><strong>Analytics.</strong> We use third-party analytics services to understand how the app is used and to improve it. They receive usage information, such as the features you use and whether requests and purchases succeed, together with a random identifier for your device and your App Store country. We do not send them your name, email address or Apple ID, or the text of your questions or answers. These services may process this information in countries other than your own.</li>
+                <li><strong>Subscription status.</strong> If you subscribe to a paid plan, the app verifies your purchase with Apple and our server using the pseudonymous identifier described below, never your Apple ID, name, or email. See <em>Subscriptions and purchases</em> below.</li>
             </ul>
         </section>
 
@@ -142,27 +143,29 @@
             <h2>What we do not collect</h2>
             <ul>
                 <li>No account, name, email, or phone number.</li>
-                <li>No location data.</li>
+                <li>No access to your location.</li>
                 <li>No advertising identifiers and no cross-app tracking.</li>
-                <li>No information about your child beyond what you choose to write in a question.</li>
+                <li>No name or age for your child. A child's name stays on your device; what we receive about a child is what you choose to write in a question and settings such as the reading level.</li>
             </ul>
         </section>
 
         <section>
             <h2>How we use this information</h2>
             <ul>
-                <li>To generate the answer to your question.</li>
-                <li>To improve Whyzard based on usage patterns and reliability signals (e.g., which question types succeed or fail, which screens parents use most).</li>
+                <li>To provide features such as answers and read-aloud.</li>
+                <li>To tag your questions, so the app can suggest questions and group related ones. The tags are stored on your device.</li>
+                <li>To apply free-use limits and verify subscriptions.</li>
+                <li>To improve Whyzard based on usage patterns and reliability signals, such as which kinds of questions succeed or fail and which features parents use most.</li>
             </ul>
         </section>
 
         <section>
             <h2>Subscriptions and purchases</h2>
-            <p>Whyzard offers optional paid subscriptions. The app is fully usable without one.</p>
+            <p>Whyzard offers optional paid subscriptions. You can use it without one, within certain limits.</p>
             <ul>
-                <li><strong>Apple handles payment.</strong> Purchases are processed by Apple through the App Store. We never receive or store your payment card, Apple ID, or billing address.</li>
-                <li><strong>Verifying your subscription.</strong> To confirm your subscription is active and keep it in sync across your devices, the app sends Apple's signed purchase receipt and an anonymous subscriber identifier to our server. That identifier is derived from a value Apple assigns to your app install — it is not your name, email, or Apple ID, and we cannot use it to contact or identify you.</li>
-                <li><strong>What we store.</strong> Keyed to that anonymous identifier, our server keeps only your subscription status (the plan and its renewal or expiry date) so the app can unlock paid features. Apple notifies our server when your subscription renews, lapses, or is refunded so this status stays current.</li>
+                <li><strong>Apple handles payment.</strong> Purchases are processed by Apple through the App Store. We do not receive or store your payment card, Apple ID, or billing address.</li>
+                <li><strong>Your identifier.</strong> The app sends a pseudonymous identifier with its requests to our server, for purposes such as applying free-use limits and verifying a subscription. The identifier is tied to your Apple Account for this app, so it is the same on each of your devices. It is based on information Apple provides about your download of the app; it is not your name, email, or Apple ID, and we cannot use it to contact you. When that information is not available, the app uses an identifier tied to your device instead. To verify a subscription, the app also sends Apple's confirmation of the purchase.</li>
+                <li><strong>What we store.</strong> Under that identifier, our server keeps your subscription status, such as the plan and when it renews or ends, so the app can unlock paid features, and usage counts, such as how many questions you have asked today, which it keeps for a limited time. Apple notifies our server when your subscription renews, lapses, or is refunded so this status stays current.</li>
             </ul>
         </section>
 
@@ -179,34 +182,36 @@
         <section>
             <h2>How long we keep it</h2>
             <ul>
-                <li><strong>On-device data:</strong> Stored on your device until you delete the app.</li>
-                <li><strong>Server logs:</strong> Our hosting provider logs operational metadata (such as request timing, an anonymous session ID, and app version) per its default platform retention. We retain data only as long as needed to run and improve the service.</li>
-                <li><strong>Observability traces:</strong> For debugging and answer-quality improvement, we send each request to a third-party observability provider — including the text of your question, the prompts we send to the AI provider, the AI response, and request metadata. Retention is governed by that provider's terms.</li>
+                <li><strong>On-device data:</strong> Stored on your device until you delete it or the app, except an identifier for your device, which can remain on the device after the app is deleted and is used again if you reinstall the app.</li>
+                <li><strong>Question tags:</strong> Apple states that data processed in Private Cloud Compute is processed only to fulfill the request, is not stored or made accessible to Apple, and is not retained after the result is returned. Apple may collect limited information about each request, such as its approximate size and how long it takes, which Apple states does not include the content of the request or its result. The tags stay on your device until you delete the conversation, the child's profile or the app.</li>
+                <li><strong>Server logs:</strong> Our hosting providers log operational information, such as request timing, the app version and identifiers sent with a request, and keeps it according to its own retention. We keep data for as long as we need it to run and improve the service.</li>
+                <li><strong>Observability traces:</strong> For debugging and to improve answer quality, we send request data to third-party observability providers, such as the text of your question, the prompts we send to AI providers, the response, request details, and your rating of an answer if you give one. Those providers keep it according to their own terms.</li>
                 <li><strong>Analytics:</strong> Retained by our analytics services according to their own retention.</li>
-                <li><strong>Subscription status:</strong> Stored keyed to the anonymous subscriber identifier and kept current as your subscription renews; it reflects only your current plan and renewal date, not a purchase history.</li>
+                <li><strong>Subscription status:</strong> Stored under the pseudonymous identifier and kept current as your subscription renews, lapses, or is refunded.</li>
+                <li><strong>Usage counts:</strong> Kept under the pseudonymous identifier for a limited time.</li>
             </ul>
         </section>
 
         <section>
             <h2>Third parties</h2>
-            <p>We use the following third parties to operate the service:</p>
+            <p>We use third parties such as these to operate the service:</p>
             <ul>
-                <li><strong>Our hosting provider</strong> — runs the API and processes your request, including the text of your question, while generating the answer.</li>
-                <li><strong>Our AI provider</strong> — receives your question to generate the answer, and processes it under its own terms.</li>
-                <li><strong>Our observability provider</strong> — receives request data (question text, prompts, response, and metadata) so we can debug failures and improve answer quality.</li>
+                <li><strong>Hosting providers</strong> — run our server and process your requests, including what they contain, such as the text of a question or of an answer read aloud.</li>
+                <li><strong>AI providers</strong> — receive what a feature needs, such as the text of your question or of an answer read aloud, to generate the result, and process it under their own terms.</li>
+                <li><strong>Observability providers</strong> — receive request data, such as question text, prompts, responses, and metadata, so we can debug failures and improve answer quality.</li>
                 <li><strong>Analytics services</strong> — receive the usage information described above.</li>
-                <li><strong>Apple</strong> — processes subscription payments through the App Store and sends our server signed receipts and renewal notifications so we can verify your access. See <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</li>
+                <li><strong>Apple</strong> — processes subscription payments through the App Store and tells our server when a subscription changes so we can verify your access. On supported devices, Apple's Private Cloud Compute also processes question text to tag questions, as described above. See <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a> and <a href="https://www.apple.com/legal/privacy/data/en/intelligence-engine/">Apple Intelligence &amp; Privacy</a>.</li>
             </ul>
         </section>
 
         <section>
             <h2>Children's privacy</h2>
-            <p>Whyzard is intended for parents. The child is never the direct user of the app. We do not knowingly collect personal information from children under 13.</p>
+            <p>Whyzard is intended for parents and is not designed for a child to use directly. We do not knowingly collect personal information from children under 13.</p>
         </section>
 
         <section>
             <h2>Your rights</h2>
-            <p>Whyzard has no user accounts and stores no name, email, or contact information, so there is no profile to access or delete. Uninstalling the app removes all data stored on your device. If you reside in a region with privacy laws such as GDPR or CCPA, you have the rights provided by those laws — contact us to exercise them.</p>
+            <p>Whyzard has no user accounts and stores no name, email, or contact information. Your conversations and settings live on your device, and deleting the app removes them, apart from the device identifier described above. If you reside in a region with privacy laws such as the GDPR or CCPA, you have the rights those laws provide; contact us to exercise them.</p>
         </section>
 
         <section>
